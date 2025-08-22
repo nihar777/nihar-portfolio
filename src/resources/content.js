@@ -1,16 +1,17 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nihar",
+  lastName: "Devmurari",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "React Native Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "nihardevmurari7@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  availability: "Open to US & UK shifts, flexible remote",
+  languages: ["English", "Hindi", "Gujarati"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +19,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -30,17 +31,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/nihar777",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/nihar-d-a71022116/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Twitter",
+    icon: "x",
+    link: "https://x.com/devmurari_nih",
   },
   {
     name: "Email",
@@ -55,18 +56,25 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
-  subline: (
+ headline: <>Building seamless mobile experiences</>,
+featured: {
+  display: true,
+  title: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Recent projects: <strong className="ml-4">Emari Roast Cafe</strong> {" "} & {" "}
+      <strong>Referaly</strong>
     </>
   ),
+  href: "/work",
+},
+subline: (
+  <>
+    I'm Nihar, a mobile app developer specializing in{" "}
+    <strong>React Native</strong>, where I craft high-quality, cross-platform
+    apps.<br />Beyond client work, I love building and experimenting with my
+    own projects.
+  </>
+),
 };
 
 const about = {
@@ -83,16 +91,20 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/nihar-devmurari-7",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Nihar Devmurari is an Ahmedabad-based React Native mobile app developer
+        with 4.7 years of experience crafting high-performance, cross-platform
+        applications. Skilled in React Native, JavaScript, TypeScript, and
+        modern UI/UX practices, he is passionate about building seamless digital
+        experiences for Android and iOS. Open to remote opportunities worldwide,
+        he blends technical expertise with a focus on delivering user-centric
+        mobile solutions.
       </>
     ),
   },
@@ -101,41 +113,83 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Ninjatech",
+        timeframe: "May 2024 - Present",
+        role: "Senior Software Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led development of the Referaly app with React Native, collaborating
+            with a UK team for an international client.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Boosted app performance by 40–70% through optimized rendering and
+            memory management.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+         
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Konzept Solutions",
+        timeframe: "Aug 2023 - May 2024",
+        role: "Mobile Application Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built cross-platform apps using React Native, Redux Toolkit, and
+            TanStack Query.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Optimized performance by 60–85% through efficient state management
+            and code splitting.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Shine Infosoft",
+        timeframe: "Mar 2023 - Aug 2023",
+        role: "Sr. Mobile App Developer",
+        achievements: [
+          <>
+            Led development of Credit Mountain, a USA FinTech app, achieving 20%
+            client acquisition growth and 99% uptime.
+          </>,
+          <>
+            Collaborated with international clients across time zones for
+            seamless delivery.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Shine Infosoft",
+        timeframe: "Jun 2021 - Mar 2023",
+        role: "Jr. React Native Developer",
+        achievements: [
+          <>
+            Built apps like Skill India Digital and Whimstay, achieving 98%
+            deployment success on Play Store and App Store.
+          </>,
+          <>
+            Implemented robust API integrations and state management using Redux
+            and React Query for efficient data handling.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Silicon Valley WebDev Services",
+        timeframe: "Jan 2021 - Jun 2021",
+        role: "React Native Developer",
+        achievements: [
+          <>
+            Initiated cross-platform projects and integrated APIs for apps like
+            Tabella Catholic.
+          </>,
+          <>
+            Improved API response time by 15% for Tabella Catholic through
+            optimized integration techniques.
           </>,
         ],
         images: [],
@@ -147,12 +201,22 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Saurashtra University, Gujarat",
+        description: (
+          <>
+            Completed Bachelor's in Computer Applications with a focus on
+            computer science and software development.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Sabarmati University, Gujarat",
+        description: (
+          <>
+            Currently pursuing a Master's degree in an external program,
+            specializing in computer science.
+          </>
+        ),
       },
     ],
   },
@@ -162,34 +226,98 @@ const about = {
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        description: (
+          <>
+            Proficient in using Figma to design and prototype mobile
+            applications, and skilled at translating design files into
+            responsive, high-quality React Native apps.
+          </>
+        ),
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/skills/figma-01.jpg",
+          //   alt: "Figma mobile app design",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/skills/figma-02.jpg",
+          //   alt: "UI prototyping in Figma",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "React Native (CLI & Expo)",
+        description: (
+          <>
+            Experienced in building cross-platform mobile applications using
+            both React Native CLI and Expo, with expertise in performance
+            optimization, state management, and smooth deployment workflows.
+          </>
+        ),
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/skills/react-native-01.jpg",
+          //   alt: "React Native project",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
+        title: "JavaScript & TypeScript",
+        description: (
+          <>
+            Strong command of JavaScript (ES5, ES6) and TypeScript for
+            developing scalable, maintainable, and type-safe mobile application
+            codebases.
+          </>
+        ),
+        images: [
+          // {
+          //   src: "/images/projects/skills/js-ts-01.jpg",
+          //   alt: "JavaScript and TypeScript coding",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
+        title: "Redux Toolkit & React Query",
+        description: (
+          <>
+            Skilled in efficient state management and data fetching using Redux
+            Toolkit and React Query, enabling optimal performance and smooth
+            user experiences.
+          </>
+        ),
+        images: [
+          // {
+          //   src: "/images/projects/skills/redux-query-01.jpg",
+          //   alt: "State management architecture",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
+        title: "REST APIs & Firebase",
+        description: (
+          <>
+            Adept at integrating RESTful APIs, Google APIs, and Firebase
+            services into mobile applications for dynamic and real-time
+            functionality.
+          </>
+        ),
+        images: [
+          // {
+          //   src: "/images/projects/skills/api-firebase-01.jpg",
+          //   alt: "API integration diagram",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
