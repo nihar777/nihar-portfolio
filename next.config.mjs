@@ -13,6 +13,9 @@ const nextConfig = {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
+  devIndicators: {
+    position: "bottom-right", // ✅ new key
+  },
 };
 
 export default withMDX(nextConfig);
